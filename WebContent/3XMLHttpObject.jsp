@@ -24,6 +24,9 @@
 			- method: request type GET or POST.
 			- url: vị trí file.
 			- async: true(asynchronous) or false (synchronous: đồng bộ).
+				. false (synchronous: đồng bộ): không được khuyến kích vì JS sẽ ngừng thực thị cho đến khi phản hồi của máy chủ sẵn sàng.
+					nếu máy chủ châm hoặc bận ứng dụng sẽ treo hoặc dừng.
+					, và sử dụng thì có thể ném một ngoại lệ InvalidAccessError khi nó xảy ra.					
 			- user: name user.
 			- psw: password user.
 		+ send(): Gửi request lên server, used cho POST request.
