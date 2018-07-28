@@ -25,7 +25,7 @@
 		var xHttp = new XMLHttpRequest();
 		xHttp.onreadystatechange = function(){
 			if(this.readyState == 4 && this.status == 200){
-				document.getElementById("divId1").innerHTML = this.responeseText;
+				document.getElementById("divId").innerHTML = this.responseText;
 			}
 		};
 		xHttp.open("GET","ajax_info.txt",true);		
@@ -35,7 +35,7 @@
 </head>
 
 <body>
-	<div id="divId1">
+	<div id="divId">
 		<h2>XMLHttpRequest Object</h2>
 		<button type="button" onclick="loadDoc()">Thay đổi nội dung</button>
 	</div>
