@@ -29,7 +29,7 @@
 
 <body>
 	<form>		 
-		Name:<input id="fullName" type="text"/>
+		<span>Name:</span><input id="fullName" type="text"/>		
 		<input id="btnSubmit" type="button" value="Submit" />
 		<br>
 		<span id="spanResult"></span>
